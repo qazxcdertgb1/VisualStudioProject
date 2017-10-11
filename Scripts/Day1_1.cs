@@ -4,12 +4,12 @@ namespace ScriptTest
 {
 	public class Day1_1
 	{
-		/*public static void Main(string[] args)
+		public void Run()
 		{
 			int num = Convert.ToInt32(Console.ReadLine());
-			for(int i = 1;i < num; i++)
+			for (int i = 1; i < num; i++)
 			{
-				for(int j=num-i-1;j > 0;j--)
+				for (int j = num - i - 1; j > 0; j--)
 				{
 
 					Console.Write(" ");
@@ -22,7 +22,7 @@ namespace ScriptTest
 				Console.WriteLine();
 			}
 			Console.WriteLine();
-		}*/
+		}
 	}
 
 }

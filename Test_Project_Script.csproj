@@ -45,8 +45,13 @@
     <Compile Include="Scripts\Class3_Test.cs" />
     <Compile Include="Scripts\Day10_1.cs" />
     <Compile Include="Scripts\Day1_1.cs" />
+    <Compile Include="Scripts\Inherit.cs" />
+    <Compile Include="Scripts\ScriptManager.cs" />
+    <Compile Include="Scripts\Single.cs" />
+    <Compile Include="Scripts\Teacher.cs" />
     <Compile Include="Scripts\Student.cs" />
     <Compile Include="Scripts\Person.cs" />
+    <Compile Include="Scripts\WolfGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".vs\Solution1.sqlite" />

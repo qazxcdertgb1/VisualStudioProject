@@ -14,7 +14,7 @@ namespace ScriptTest
 		/// </summary>
 		/// <param name="studentName"></param>
 		/// <param name="studentKG"></param>
-		public Student(string studentName,int studentKG)
+		public Student(string studentName, int studentKG)
 		{
 			this.studentKG = studentKG;
 			this.studentName = studentName;
@@ -27,7 +27,7 @@ namespace ScriptTest
 		/// <returns></returns>
 		public int Comp(Student stu)
 		{
-			
+
 			return this.studentKG - stu.studentKG;
 		}
 
@@ -45,15 +45,15 @@ namespace ScriptTest
 
 	}
 
-	public class Name
+	public class NameClass
 	{
-		/*public static void Main(string[] args)
+		public void Run()
 		{
-			Student stu1 = new Student("abc",70);
-			Student stu2 = new Student("xyz",1200);
-			Console.WriteLine("学生 "+stu1.GetStudentName()+" 的体重为:"+stu1.GetStudentKG()+"公斤，，，\n学生 "+stu2.GetStudentName()+" 的体重为:"+stu2.GetStudentKG()+"公斤，，，");
+			Student stu1 = new Student("abc", 70);
+			Student stu2 = new Student("xyz", 1200);
+			Console.WriteLine("学生 " + stu1.GetStudentName() + " 的体重为:" + stu1.GetStudentKG() + "公斤，，，\n学生 " + stu2.GetStudentName() + " 的体重为:" + stu2.GetStudentKG() + "公斤，，，");
 			Console.Write(stu1.GetStudentName() + "的体重比" + stu2.GetStudentName());
-			if(stu1.Comp(stu2) < 0)
+			if (stu1.Comp(stu2) < 0)
 			{
 				Console.Write("轻");
 			}
@@ -62,7 +62,7 @@ namespace ScriptTest
 				Console.Write("重");
 			}
 			Console.Write(Math.Abs(stu1.Comp(stu2)) + "公斤，，，\n");
-		}*/
+		}
 	}
 
 

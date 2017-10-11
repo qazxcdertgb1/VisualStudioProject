@@ -24,15 +24,15 @@ namespace ScriptTest
 
 	}
 
-	public class DemoScript
+	public class DemoScriptClass
 	{
-		/*public static void Main(string[] args)
+		public void Run()
 		{
 			Person p1 = new Person(20);
 			Person p2 = new Person(30);
 			Console.WriteLine(p1.comp(p2));
-			
-		}*/
+
+		}
 
 	}
 }

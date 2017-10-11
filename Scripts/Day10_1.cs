@@ -6,10 +6,10 @@ namespace ScriptTest
 	public class Day10_1
 	{
 
-		//public static void Main(string[] args)
-		//{
-			//string m_str = "//aaa \nstatic void Main(string[] args)  //aaaa \n{\n  int a = 10 / 2;\n  /***aaa\n  aaa\n  ***/\n}";
-			/*int stat = 0;
+		public void Run()
+		{
+			string m_str = "//aaa \nstatic void Main(string[] args)  //aaaa \n{\n  int a = 10 / 2;\n  /***aaa\n  aaa\n  ***/\n}";
+			int stat = 0;
 			for (int i = 0; i < m_str.Length; i++)
 			{
 				switch (stat)
@@ -19,7 +19,7 @@ namespace ScriptTest
 						{
 							stat = 1;
 						}
-						else if(m_str[i] == ' ')
+						else if (m_str[i] == ' ')
 						{
 							stat = 4;
 							Console.Write(m_str[i]);
@@ -30,11 +30,11 @@ namespace ScriptTest
 						}
 						break;
 					case 1:
-						if(m_str[i] == '/')
+						if (m_str[i] == '/')
 						{
 							stat = 2;
 						}
-						else if(m_str[i] == '*')
+						else if (m_str[i] == '*')
 						{
 							stat = 3;
 						}
@@ -53,14 +53,14 @@ namespace ScriptTest
 						}
 						break;
 					case 3:
-						if(m_str[i] == '*' && m_str[i+1] == '/')
+						if (m_str[i] == '*' && m_str[i + 1] == '/')
 						{
 							stat = 0;
 							i++;
 						}
 						break;
 					case 4:
-						if(m_str[i] != ' ')
+						if (m_str[i] != ' ')
 						{
 							stat = 0;
 							i--;
@@ -71,7 +71,7 @@ namespace ScriptTest
 				}
 			}
 			Console.WriteLine();
-		}*/
+		}
 	}
 }
 

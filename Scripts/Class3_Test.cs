@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 
-namespace Class3_Test
+namespace ScriptTest.Class3_Test
 {
-	
+
 
 	/// <summary>
 	/// 主函数
 	/// </summary>
 	public class Class3_Test
 	{
-		public static void Main(string[] args)
+		public void Run()
 		{
 			for (; ; GC.Collect(), Console.WriteLine(), Console.WriteLine("请按任意键继续，，，"), Console.ReadKey())
 			{
@@ -26,9 +26,9 @@ namespace Class3_Test
 				Console.WriteLine("8，根据输入行数打印出杨辉三角形");
 				Console.WriteLine("9，退出，，，");
 
-				try			//处理字母输入
+				try         //处理字母输入
 				{
-				switch (Convert.ToByte(Console.ReadLine()))
+					switch (Convert.ToByte(Console.ReadLine()))
 
 					{
 						case 1:
@@ -63,7 +63,7 @@ namespace Class3_Test
 							break;
 					}
 				}
-				catch(System.FormatException)
+				catch (System.FormatException)
 				{
 					Console.WriteLine("输入的内容不符。");
 					continue;
@@ -82,7 +82,7 @@ namespace Class3_Test
 		{
 			Console.Clear();
 
-			int[] arrInt = {	23, 423, 123, 32, 22,
+			int[] arrInt = {    23, 423, 123, 32, 22,
 								65, 334, 12 , 89, 54 };
 
 			Console.Write("请输入一个数字: ");
@@ -100,7 +100,7 @@ namespace Class3_Test
 				{
 					if (inside == Ele)
 					{
-						Printout(i);
+						Printout(i, inside.ToString());
 						return;
 					}
 					i++;
@@ -113,7 +113,7 @@ namespace Class3_Test
 				{
 					if (inside == arrInt[i])
 					{
-						Printout(i);
+						Printout(i, inside.ToString());
 						return;
 					}
 				}
@@ -123,17 +123,17 @@ namespace Class3_Test
 			Printout(i);
 		}
 
-		public void Printout(int i)
+		public void Printout(int i, string inNum = null)
 		{
 			//Nothing Found
-			if(i == -1)
+			if (i == -1)
 			{
 				Console.WriteLine("\n-1:Null");
 				return;
 			}
 
 
-			Console.WriteLine("\n{0}:数字位于第{1}位，索引为{0}", i, i + 1);
+			Console.WriteLine("\n{0}:数字\"{1}\"位于第{2}位，索引为{0}", i, inNum, i + 1);
 		}
 	}
 
@@ -151,9 +151,9 @@ namespace Class3_Test
 			//分数输入
 			for (int i = 0; i != 10; i++)
 			{
-				Console.Write("第{0}位评委的分数: ",i+1);
+				Console.Write("第{0}位评委的分数: ", i + 1);
 				int tempInt = Convert.ToInt32(Console.ReadLine());
-				if(tempInt <=0 || tempInt >100 )
+				if (tempInt <= 0 || tempInt > 100)
 				{
 					Console.WriteLine("分数不符");
 					i--;
@@ -170,13 +170,13 @@ namespace Class3_Test
 			for (int j = 1; j != arrInt.Length; j++)
 			{
 				//最大值
-				if(arrInt[maxScoreNum]<arrInt[j])
+				if (arrInt[maxScoreNum] < arrInt[j])
 				{
 					maxScoreNum = j;
 				}
 
 				//最小值
-				if(arrInt[minScoreNum]>arrInt[j])
+				if (arrInt[minScoreNum] > arrInt[j])
 				{
 					minScoreNum = j;
 				}
@@ -200,17 +200,17 @@ namespace Class3_Test
 		{
 			Console.Clear();
 
-			int[,] arrIntD = {	{ 456	, 8		, 2		, 144	, 58	 }, 
-								{ 24	, 8		, 72	, 48	, 2		 }, 
-								{ 15	, 87	, 202	, 14	, 87	 }, 
-								{ 567	, 123	, 0		, 313	, 75	 } };
+			int[,] arrIntD = {  { 456   , 8     , 2     , 144   , 58     },
+								{ 24    , 8     , 72    , 48    , 2      },
+								{ 15    , 87    , 202   , 14    , 87     },
+								{ 567   , 123   , 0     , 313   , 75     } };
 
 			int singleNum = 0, doubleNum = 0;
 
 			//统计奇偶
-			foreach(int Ela in arrIntD)
+			foreach (int Ela in arrIntD)
 			{
-				if(Ela % 2 == 1)
+				if (Ela % 2 == 1)
 				{
 					singleNum++;
 				}
@@ -234,11 +234,11 @@ namespace Class3_Test
 		{
 			Console.Clear();
 
-			int[,] arrIntD = {	{ 864	, 23	, 1231	, 18	, 8945	 },
-								{ 1564	, 81	, 857	, 56	, 576	 }, 
-								{ 546	, 87	, 23	, 74	, 231	 }, 
-								{ 86	, 5		, 20	, 7		, 35	 }, 
-								{ 53	, 1		, 8		, 354	, 7		 } };
+			int[,] arrIntD = {  { 864   , 23    , 1231  , 18    , 8945   },
+								{ 1564  , 81    , 857   , 56    , 576    },
+								{ 546   , 87    , 23    , 74    , 231    },
+								{ 86    , 5     , 20    , 7     , 35     },
+								{ 53    , 1     , 8     , 354   , 7      } };
 
 			int bianChang = (int)Math.Sqrt(arrIntD.Length);
 			int numAdd = 0;
@@ -250,7 +250,7 @@ namespace Class3_Test
 			}
 
 			//奇数边长处理
-			if(bianChang%2 !=0)
+			if (bianChang % 2 != 0)
 			{
 				numAdd -= arrIntD[bianChang / 2, bianChang / 2];
 			}
@@ -273,7 +273,7 @@ namespace Class3_Test
 			Console.Write("输入5位数字: ");
 			strNum = Console.ReadLine();
 
-			if(strNum[0] == strNum[4] || strNum[1] == strNum[3])
+			if (strNum[0] == strNum[4] || strNum[1] == strNum[3])
 			{
 				Console.WriteLine("该数字是回文数。");
 				return;
@@ -310,11 +310,11 @@ namespace Class3_Test
 				{
 					englishNum++;
 				}
-				else if(reNumber.IsMatch(tempStr))
+				else if (reNumber.IsMatch(tempStr))
 				{
 					numberNum++;
 				}
-				else if(reSpace.IsMatch(tempStr))
+				else if (reSpace.IsMatch(tempStr))
 				{
 					spaceNum++;
 				}
@@ -324,8 +324,8 @@ namespace Class3_Test
 				}
 
 			}
-			
-			Console.WriteLine("字符串中有{0}个英文字母，{1}个数字，{2}个空格和{3}个特殊字符。",englishNum,numberNum,spaceNum,specialNum);
+
+			Console.WriteLine("字符串中有{0}个英文字母，{1}个数字，{2}个空格和{3}个特殊字符。", englishNum, numberNum, spaceNum, specialNum);
 		}
 	}
 
@@ -338,7 +338,7 @@ namespace Class3_Test
 		{
 			Console.Clear();
 
-			int[] arrInt = {	1, 4, 5, 3, 6,
+			int[] arrInt = {    1, 4, 5, 3, 6,
 								6, 1, 4, 9, 7 };
 
 			int charNum = 0;
@@ -348,9 +348,9 @@ namespace Class3_Test
 			//查找重复的数字并存储
 			for (int i = 0; i != arrInt.Length; i++)
 			{
-				for(int j = i+1; j!= arrInt.Length;j++)
+				for (int j = i + 1; j != arrInt.Length; j++)
 				{
-					if(arrInt[i] == arrInt[j])
+					if (arrInt[i] == arrInt[j])
 					{
 						arrCharD[i, 0] = (char)arrInt[i];
 						charNum++;
@@ -368,7 +368,7 @@ namespace Class3_Test
 			}*/
 
 			//输出
-			for (int i = 0; i != arrInt.Length-1; i++)
+			for (int i = 0; i != arrInt.Length - 1; i++)
 			{
 				if ((int)arrCharD[i, 0] != 0)
 				{
@@ -396,33 +396,39 @@ namespace Class3_Test
 			Console.Clear();
 
 			Console.Write("输入行数: ");
-			byte tempB = Convert.ToByte(Console.ReadLine());
+			int tempI = Convert.ToInt32(Console.ReadLine());
 
-			long[,] arrLongD = new long[tempB, tempB];
-
-			arrLongD[0, 0] = 1;
-
-			//计算对应位置的数值并存储
-			for (int i = 1; i != tempB; i++)
+			try
 			{
-				arrLongD[i, 0] = 1;
-				for (int j = 1; j != tempB; j++)
-				{
-					arrLongD[i, j] = arrLongD[i - 1, j - 1] + arrLongD[i - 1, j];
-				}
-			}
+				long[,] arrLongD = new long[tempI, tempI];
+				arrLongD[0, 0] = 1;
 
-			//输出数值图形
-			for (int i = 0; i!= tempB; i++)
-			{
-				for (int j = 0; j != tempB; j++)
+				//计算对应位置的数值并存储
+				for (int i = 1; i != tempI; i++)
 				{
-					if (arrLongD[i, j] != 0)
+					arrLongD[i, 0] = 1;
+					for (int j = 1; j != tempI; j++)
 					{
-						Console.Write(arrLongD[i,j] + " ");
+						arrLongD[i, j] = arrLongD[i - 1, j - 1] + arrLongD[i - 1, j];
 					}
 				}
-				Console.WriteLine();
+
+				//输出数值图形
+				for (int i = 0; i != tempI; i++)
+				{
+					for (int j = 0; j != tempI; j++)
+					{
+						if (arrLongD[i, j] != 0)
+						{
+							Console.Write(arrLongD[i, j] + " ");
+						}
+					}
+					Console.WriteLine();
+				}
+			}
+			catch (OutOfMemoryException)
+			{
+				Console.WriteLine("内存溢出，行数过多，诉控");
 			}
 		}
 	}
