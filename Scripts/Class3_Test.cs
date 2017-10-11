@@ -12,10 +12,8 @@ namespace ScriptTest.Class3_Test
 	{
 		public void Run()
 		{
-			for (; ; GC.Collect(), Console.WriteLine(), Console.WriteLine("请按任意键继续，，，"), Console.ReadKey())
+			for (; ; GC.Collect(), Console.WriteLine(), Console.WriteLine("请按任意键继续，，，"), Console.ReadKey(), Console.Clear())
 			{
-				Console.Clear();
-
 				Console.WriteLine("1，有十个数放入数组中，用户输入一个数值，找出这个数值在本数组中的索引，如果没有输出“-1”！（使用两种方式）");
 				Console.WriteLine("2，在程序大奖赛中，有10个评委为参赛的选手打分，分数为1~100分。选手最后得分为：去掉一个最高分和一个最低分后其余8个分数的平均值。请编写一个程序实现。");
 				Console.WriteLine("3，编写程序，统计4 * 5二维数组中奇数的个数和偶数的个数。");

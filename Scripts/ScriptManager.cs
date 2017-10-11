@@ -8,17 +8,31 @@ namespace ScriptTest
 		{
 			for (; ; Console.WriteLine("请按任意键继续，，，"), Console.ReadKey(), GC.Collect(), Console.Clear())
 			{
-				string[] str = { "1. Person.cs", "2. Student.cs", "3. Day1_1.cs", "4. Day10_1.cs", "5. Class3_Test.cs", "6. StaticDemo.cs", "7. WolfGame.cs", "\n100. 退出\n" };
+				string[] str = {
+								"1. Person.cs",
+								"2. Student.cs",
+								"3. Day1_1.cs",
+								"4. Day10_1.cs",
+								"5. Class3_Test.cs",
+								"6. Teacher.cs",
+								"7. WolfGame.cs",
+								"8. Single.cs --- Nope",
+								"9. Inherit.cs",
+								"10. ExtendsTest.cs",
+								"\n100. 退出\n"
+								};
 				for (int i = 0; i != str.Length; i++)
 				{
 					Console.WriteLine(str[i]);
 				}
 
 				Console.Write("输入数字: ");
-
 				try
 				{
-					switch (Convert.ToByte(Console.ReadLine()))
+					byte byt = Convert.ToByte(Console.ReadLine());
+					Console.Clear();
+
+					switch (byt)
 					{
 						case 1:
 							new DemoScriptClass().Run();
@@ -35,8 +49,20 @@ namespace ScriptTest
 						case 5:
 							new Class3_Test.Class3_Test().Run();
 							break;
+						case 6:
+							Teacher.Run();	//Static Run();
+							break;
 						case 7:
 							new WolfGame().Run();
+							break;
+						case 8:
+							Console.WriteLine("Nope");
+							break;
+						case 9:
+							Inherit.Run();  //Static Run();
+							break;
+						case 10:
+							new ExtendsTest().Run();
 							break;
 						case 100:
 							return;
