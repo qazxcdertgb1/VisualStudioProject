@@ -85,7 +85,12 @@ namespace ScriptTest
 				}
 				catch (System.FormatException)
 				{
-
+					Console.WriteLine("输入类型不符");
+					continue;
+				}
+				catch (OverflowException)
+				{
+					Console.WriteLine("序号过大");
 					continue;
 				}
 			}

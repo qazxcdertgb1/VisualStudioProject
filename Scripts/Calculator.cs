@@ -17,17 +17,18 @@ namespace ScriptTest
 				{
 					try
 					{
-						Console.Write("数字1: ");
+						Console.Write("\n数字1: ");
 						inputNum1 = Convert.ToDouble(Console.ReadLine());
+
 						Console.Clear();
-						Console.Write("{0}\n运算符号: ", inputNum1);
+						Console.Write("{0}\n支持的运算: 加(+),减(-),乘(x,X,×,*),除(/,\\)\n运算符号: ", inputNum1);
 						symbol = Console.ReadKey(false).KeyChar;
+
 						Console.Clear();
 						Console.Write("{0}{1}\n数字2: ", inputNum1, symbol);
 						inputNum2 = Convert.ToDouble(Console.ReadLine());
-						Console.Clear();
 
-						//System.Threading.Thread.Sleep(100000); //Pause to test
+						Console.Clear();
 
 						result = Calculator.StartCalculator(inputNum1, inputNum2, symbol);
 					}
@@ -81,6 +82,7 @@ namespace ScriptTest
 					return Subtraction(num1, num2);
 				case 'X':
 				case 'x':
+				case '×':
 				case '*':
 					return Multiplication(num1, num2);
 				case '/':
@@ -108,6 +110,8 @@ namespace ScriptTest
 
 		private static double Division(double num1, double num2)
 		{
+			if (num2 == 0)
+				throw new DivideByZeroException();
 			return num1 / num2;
 		}
 	}
