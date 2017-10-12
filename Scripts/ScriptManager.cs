@@ -21,6 +21,7 @@ namespace ScriptTest
 								"10. ExtendsTest.cs",
 								"11. Day14_1.cs",
 								"12. Day14_2.cs",
+								"13. Calculator.cs",
 								"\n100. 退出\n"
 								};
 
@@ -72,6 +73,9 @@ namespace ScriptTest
 							break;
 						case 12:
 							new RunClass().Run();
+							break;
+						case 13:
+							new CalculatorInside().Start();
 							break;
 						case 100:
 							return;

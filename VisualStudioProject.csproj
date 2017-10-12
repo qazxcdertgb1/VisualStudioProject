@@ -42,6 +42,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Scripts\Calculator.cs" />
     <Compile Include="Scripts\Day14_1.cs" />
     <Compile Include="Scripts\Class3_Test.cs" />
     <Compile Include="Scripts\Day10_1.cs" />

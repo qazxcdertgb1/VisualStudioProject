@@ -428,6 +428,10 @@ namespace ScriptTest.Class3_Test
 			{
 				Console.WriteLine("内存溢出，行数过多，诉控");
 			}
+			catch (OverflowException)
+			{
+				Console.WriteLine("行数过多，变量溢出");
+			}
 		}
 	}
 
