@@ -61,7 +61,7 @@ namespace ScriptTest
 
 			string strTemp;
 
-			switch(arrDouble[0])
+			switch (arrDouble[0])
 			{
 				case 0:
 					strTemp = "圆形";
@@ -81,9 +81,9 @@ namespace ScriptTest
 
 		private double[] PrintIn()
 		{
-			arrDouble[0] = Convert.ToInt32(Console.ReadLine()) -1;
+			arrDouble[0] = Convert.ToInt32(Console.ReadLine()) - 1;
 
-			if(arrDouble[0] == 0)
+			if (arrDouble[0] == 0)
 			{
 				Console.Write("输入半径: ");
 			}
@@ -93,7 +93,7 @@ namespace ScriptTest
 			}
 			arrDouble[1] = Convert.ToInt32(Console.ReadLine());
 
-			if(arrDouble[0] == 1)
+			if (arrDouble[0] == 1)
 			{
 				Console.Write("输入边宽: ");
 				arrDouble[2] = Convert.ToInt32(Console.ReadLine());

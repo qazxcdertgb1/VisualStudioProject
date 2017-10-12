@@ -19,7 +19,8 @@ namespace ScriptTest
 								"8. Single.cs --- Nope",
 								"9. Inherit.cs",
 								"10. ExtendsTest.cs",
-								"11. Day14_2.cs",
+								"11. Day14_1.cs",
+								"12. Day14_2.cs",
 								"\n100. 退出\n"
 								};
 
@@ -52,7 +53,7 @@ namespace ScriptTest
 							new Class3_Test.Class3_Test().Run();
 							break;
 						case 6:
-							Teacher.Run();	//Static Run();
+							Teacher.Run();  //Static Run();
 							break;
 						case 7:
 							new WolfGame().Run();
@@ -67,6 +68,9 @@ namespace ScriptTest
 							new ExtendsTest().Run();
 							break;
 						case 11:
+							new Day14_1_Main().Run();
+							break;
+						case 12:
 							new RunClass().Run();
 							break;
 						case 100:
