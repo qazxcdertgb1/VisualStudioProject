@@ -19,8 +19,10 @@ namespace ScriptTest
 								"8. Single.cs --- Nope",
 								"9. Inherit.cs",
 								"10. ExtendsTest.cs",
+								"11. Day14_2.cs",
 								"\n100. 退出\n"
 								};
+
 				for (int i = 0; i != str.Length; i++)
 				{
 					Console.WriteLine(str[i]);
@@ -63,6 +65,9 @@ namespace ScriptTest
 							break;
 						case 10:
 							new ExtendsTest().Run();
+							break;
+						case 11:
+							new RunClass().Run();
 							break;
 						case 100:
 							return;
