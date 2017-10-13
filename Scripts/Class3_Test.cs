@@ -434,6 +434,4 @@ namespace ScriptTest.Class3_Test
 			}
 		}
 	}
-
-
 }

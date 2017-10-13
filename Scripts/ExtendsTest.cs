@@ -7,7 +7,7 @@ namespace ScriptTest
 	{
 		public void Run()
 		{
-			ChildClass cc = new ChildClass("Y",24);
+			ChildClass cc = new ChildClass("Y", 24);
 
 			Console.WriteLine("-----------Speak-----------");
 			cc.Speak();
@@ -25,7 +25,7 @@ namespace ScriptTest
 
 		private int age;
 
-		public FatherClass(string name,int age)
+		public FatherClass(string name, int age)
 		{
 			this.name = name;
 			this.age = age;
@@ -45,7 +45,7 @@ namespace ScriptTest
 
 	class ChildClass : FatherClass
 	{
-		public ChildClass(string name,int age) : base(name, age) { }
+		public ChildClass(string name, int age) : base(name, age) { }
 
 		public void Study()
 		{

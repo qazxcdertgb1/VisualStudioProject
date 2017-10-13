@@ -11,12 +11,12 @@ namespace ScriptTest
 		}
 	}
 
-	interface EatBehavior
+	interface IEatBehavior
 	{
 		void Eat();
 	}
 
-	class ChineseMeal : EatBehavior
+	class ChineseMeal : IEatBehavior
 	{
 		public void Eat()
 		{
@@ -24,7 +24,7 @@ namespace ScriptTest
 		}
 	}
 
-	class WesternStyleFood : EatBehavior
+	class WesternStyleFood : IEatBehavior
 	{
 		public void Eat()
 		{

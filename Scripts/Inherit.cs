@@ -9,7 +9,7 @@ namespace ScriptTest
 		{
 			Console.Clear();
 
-			Child1 c1 = new Child1("C1",20);
+			Child1 c1 = new Child1("C1", 20);
 			Child2 c2 = new Child2();
 
 			c1.Output();
@@ -19,10 +19,10 @@ namespace ScriptTest
 			c2.Child_2_Special();
 
 			Exit(c1, c2);
-			
+
 		}
 
-		private static void Exit(Child1 c1,Child2 c2)
+		private static void Exit(Child1 c1, Child2 c2)
 		{
 			c1 = null;
 			c2 = null;
@@ -36,7 +36,7 @@ namespace ScriptTest
 
 		protected int age;
 
-		internal Father(string name,int age)
+		internal Father(string name, int age)
 		{
 			this.name = name;
 			this.age = age;
@@ -44,14 +44,14 @@ namespace ScriptTest
 
 		internal void Output()
 		{
-			Console.WriteLine("{0}, {1}",this.name,this.age);
+			Console.WriteLine("{0}, {1}", this.name, this.age);
 		}
 	}
 
 	internal class Child1 : Father
 	{
 		internal Child1(string name = "null", int age = -1) : base(name, age) { }
-			
+
 		internal void Child_1_Special()
 		{
 			Console.WriteLine("C1Sp");
