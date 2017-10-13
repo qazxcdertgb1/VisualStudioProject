@@ -8,11 +8,11 @@ namespace ScriptTest
 	/// </summary>
 	public class Hunger
 	{
-		private Hunger hu = new Hunger();
+		private static Hunger hu = new Hunger();
 
 		private Hunger() { }
 
-		public Hunger RerurnHunger()
+		public static Hunger RerurnHunger()
 		{
 			return hu;
 		}
@@ -23,11 +23,11 @@ namespace ScriptTest
 	/// </summary>
 	public class Lazy
 	{
-		private Lazy la = null;
+		private static Lazy la = null;
 
 		private Lazy() { }
 
-		public Lazy ReturnLasy()
+		public static Lazy ReturnLasy()
 		{
 			lock (la)
 			{
