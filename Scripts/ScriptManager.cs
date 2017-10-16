@@ -23,6 +23,7 @@ namespace ScriptTest
 								"12. Day14_2.cs",
 								"13. Calculator.cs",
 								"14. InterfaceDemo.cs",
+								"15. DT.cs",
 								"\n100. 退出\n"
 								};
 
@@ -80,6 +81,9 @@ namespace ScriptTest
 							break;
 						case 14:
 							new InterfaceDemoInside().Start();
+							break;
+						case 15:
+							new DTInside().Run();
 							break;
 						case 100:
 							return;

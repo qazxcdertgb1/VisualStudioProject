@@ -48,6 +48,7 @@
     <Compile Include="Scripts\Day10_1.cs" />
     <Compile Include="Scripts\Day14_2.cs" />
     <Compile Include="Scripts\Day1_1.cs" />
+    <Compile Include="Scripts\DT.cs" />
     <Compile Include="Scripts\ExtendsTest.cs" />
     <Compile Include="Scripts\Inherit.cs" />
     <Compile Include="Scripts\InterfaceDemo.cs" />

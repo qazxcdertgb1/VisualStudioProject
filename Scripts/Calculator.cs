@@ -116,6 +116,9 @@ namespace ScriptTest
 		}
 	}
 
+	/// <summary>
+	/// 标点符号的错误
+	/// </summary>
 	class SymbolException : ArithmeticException
 	{
 		public SymbolException() { }
