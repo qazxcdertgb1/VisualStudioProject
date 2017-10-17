@@ -26,6 +26,7 @@ namespace ScriptTest
 								"15. DT.cs",
 								"16. PerformerDemo.cs",
 								"17. MediaPlayerDemo.cs",
+								"18. DuckGameDemo.cs",
 								"\n100. 退出\n"
 								};
 
@@ -92,6 +93,9 @@ namespace ScriptTest
 							break;
 						case 17:
 							new Controller().Select();
+							break;
+						case 18:
+							new DuckGameInside().Run();
 							break;
 						case 100:
 							return;

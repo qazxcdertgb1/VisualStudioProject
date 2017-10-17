@@ -11,7 +11,7 @@ namespace ScriptTest
 			{
 				try
 				{
-					Console.WriteLine(
+					Console.Write(
 									"选择设备:\n" +
 									"1. TapePlayer\n" +
 									"2. DVDPlayer\n" +
