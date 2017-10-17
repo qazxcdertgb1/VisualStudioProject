@@ -42,6 +42,8 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Scripts\MusicTest.cs" />
+    <Compile Include="Scripts\EnumDemo.cs" />
     <Compile Include="Scripts\Calculator.cs" />
     <Compile Include="Scripts\Day14_1.cs" />
     <Compile Include="Scripts\Class3_Test.cs" />
@@ -55,6 +57,7 @@
     <Compile Include="Scripts\InterfaceDemo.cs" />
     <Compile Include="Scripts\MediaPlayerDemo.cs" />
     <Compile Include="Scripts\PerformerDemo.cs" />
+    <Compile Include="Scripts\QuickSort.cs" />
     <Compile Include="Scripts\ScriptManager.cs" />
     <Compile Include="Scripts\Single.cs" />
     <Compile Include="Scripts\Teacher.cs" />
@@ -65,6 +68,9 @@
   <ItemGroup>
     <None Include=".vs\Solution1.sqlite" />
     <None Include=".vs\Solution1\v15\.suo" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Music\music_background.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
   <ProjectExtensions>

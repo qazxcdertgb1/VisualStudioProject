@@ -27,6 +27,9 @@ namespace ScriptTest
 								"16. PerformerDemo.cs",
 								"17. MediaPlayerDemo.cs",
 								"18. DuckGameDemo.cs",
+								"19. EnumDemo.cs",
+								"20. MusicTest.cs",
+								"21. QuickSort.cs",
 								"\n100. 退出\n"
 								};
 
@@ -96,6 +99,15 @@ namespace ScriptTest
 							break;
 						case 18:
 							new DuckGameInside().Run();
+							break;
+						case 19:
+							new EnumDemoInside().Run();
+							break;
+						case 20:
+							new MusicTest.MusicTest().MusicTestInside();
+							break;
+						case 21:
+							test.QuickSort.Run();
 							break;
 						case 100:
 							return;
