@@ -24,6 +24,8 @@ namespace ScriptTest
 								"13. Calculator.cs",
 								"14. InterfaceDemo.cs",
 								"15. DT.cs",
+								"16. PerformerDemo.cs",
+								"17. MediaPlayerDemo.cs",
 								"\n100. 退出\n"
 								};
 
@@ -84,6 +86,12 @@ namespace ScriptTest
 							break;
 						case 15:
 							new DTInside().Run();
+							break;
+						case 16:
+							new Program().Show();
+							break;
+						case 17:
+							new Controller().Select();
 							break;
 						case 100:
 							return;

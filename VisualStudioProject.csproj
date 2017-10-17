@@ -49,9 +49,12 @@
     <Compile Include="Scripts\Day14_2.cs" />
     <Compile Include="Scripts\Day1_1.cs" />
     <Compile Include="Scripts\DT.cs" />
+    <Compile Include="Scripts\DuckGameDemo.cs" />
     <Compile Include="Scripts\ExtendsTest.cs" />
     <Compile Include="Scripts\Inherit.cs" />
     <Compile Include="Scripts\InterfaceDemo.cs" />
+    <Compile Include="Scripts\MediaPlayerDemo.cs" />
+    <Compile Include="Scripts\PerformerDemo.cs" />
     <Compile Include="Scripts\ScriptManager.cs" />
     <Compile Include="Scripts\Single.cs" />
     <Compile Include="Scripts\Teacher.cs" />
