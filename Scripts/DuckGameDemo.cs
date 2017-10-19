@@ -99,7 +99,7 @@ namespace ScriptTest
 	{
 		public void Quack()
 		{
-			Console.WriteLine("吱");
+			Console.WriteLine("吱吱");
 		}
 	}
 
@@ -107,7 +107,7 @@ namespace ScriptTest
 	{
 		public void Quack()
 		{
-			Console.WriteLine("嘎");
+			Console.WriteLine("嘎嘎");
 		}
 	}
 
@@ -115,7 +115,7 @@ namespace ScriptTest
 	{
 		public void Quack()
 		{
-			Console.WriteLine("...");
+			Console.WriteLine("....");
 		}
 	}
 	//-------------------------飞-----------------------------------
