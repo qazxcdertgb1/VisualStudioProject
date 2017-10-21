@@ -8,7 +8,7 @@ namespace MusicTest
 	{
 		public void MusicTestInside()
 		{
-			Stream stream = File.Open("../../Assets/Music/music_background.wav", FileMode.Open);
+			Stream stream = File.OpenRead("../../Assets/Music/music_background.wav");
 			SoundPlayer player = new SoundPlayer(stream);
 			player.PlayLooping();
 			Console.ReadKey(true);

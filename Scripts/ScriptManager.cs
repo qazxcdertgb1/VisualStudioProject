@@ -1,4 +1,5 @@
 ﻿using System;
+using Test_Project_Script.Scripts;
 
 namespace ScriptTest
 {
@@ -30,6 +31,9 @@ namespace ScriptTest
 								"19. EnumDemo.cs",
 								"20. MusicTest.cs",
 								"21. QuickSort.cs",
+								"22. StructDemo.cs--Person",
+								"23. StructDemo.cs--Cat",
+								"24. ArrayListDemo.cs",
 								"\n100. 退出\n"
 								};
 
@@ -108,6 +112,15 @@ namespace ScriptTest
 							break;
 						case 21:
 							test.QuickSort.Run();
+							break;
+						case 22:
+							new StructDemo().Run();
+							break;
+						case 23:
+							new StructDemo_Cat().Run();
+							break;
+						case 24:
+							new ArrayListDemo().Run();
 							break;
 						case 100:
 							return;

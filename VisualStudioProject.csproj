@@ -42,6 +42,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Scripts\ArrayListDemo.cs" />
     <Compile Include="Scripts\MusicTest.cs" />
     <Compile Include="Scripts\EnumDemo.cs" />
     <Compile Include="Scripts\Calculator.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="Scripts\QuickSort.cs" />
     <Compile Include="Scripts\ScriptManager.cs" />
     <Compile Include="Scripts\Single.cs" />
+    <Compile Include="Scripts\StructDemo.cs" />
     <Compile Include="Scripts\Teacher.cs" />
     <Compile Include="Scripts\Student.cs" />
     <Compile Include="Scripts\Person.cs" />
