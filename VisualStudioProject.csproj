@@ -38,11 +38,18 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Scripts\ArrayListDemo.cs" />
+    <Compile Include="Scripts\CatSeeMouse.cs" />
+    <Compile Include="Scripts\Counter_Strike.cs" />
+    <Compile Include="Scripts\DelegateDemo.cs" />
+    <Compile Include="Scripts\GenericDemo.cs" />
+    <Compile Include="Scripts\HashDemo.cs" />
     <Compile Include="Scripts\MusicTest.cs" />
     <Compile Include="Scripts\EnumDemo.cs" />
     <Compile Include="Scripts\Calculator.cs" />

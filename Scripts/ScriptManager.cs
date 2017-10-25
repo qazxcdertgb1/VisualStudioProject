@@ -34,6 +34,11 @@ namespace ScriptTest
 								"22. StructDemo.cs--Person",
 								"23. StructDemo.cs--Cat",
 								"24. ArrayListDemo.cs",
+								"25. HashDemo.cs",
+								"26. GenericDemo.cs",
+								"27. DelegateDemo.cs",
+								"28. CatSeeMouse.cs",
+								"29. Counter_Strike.cs",
 								"\n100. 退出\n"
 								};
 
@@ -111,7 +116,7 @@ namespace ScriptTest
 							new MusicTest.MusicTest().MusicTestInside();
 							break;
 						case 21:
-							test.QuickSort.Run();
+							test.QuickSort.Run(); //static Run();
 							break;
 						case 22:
 							new StructDemo().Run();
@@ -122,6 +127,21 @@ namespace ScriptTest
 						case 24:
 							new ArrayListDemo().Run();
 							break;
+						case 25:
+							new HashDemo().Run();
+							break;
+						case 26:
+							new GenericDemo().Run();
+							break;
+						case 27:
+							new DelegateDemo().Run();
+							break;
+						case 28:
+							new CatSeeMouse().Run();
+							break;
+						case 29:
+							new Counter_Strike().Run();
+							break;
 						case 100:
 							return;
 						default:
@@ -130,14 +150,15 @@ namespace ScriptTest
 				}
 				catch (System.FormatException)
 				{
-					Console.WriteLine("输入类型不符");
+					Console.WriteLine("输入类型不符, 已跳出");
 					continue;
 				}
 				catch (OverflowException)
 				{
-					Console.WriteLine("序号过大");
+					Console.WriteLine("序号过大, 已跳出");
 					continue;
 				}
+				finally { }
 			}
 		}
 	}
