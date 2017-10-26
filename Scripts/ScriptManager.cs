@@ -145,17 +145,17 @@ namespace ScriptTest
 						case 100:
 							return;
 						default:
-							break;
+							throw new OverflowException();
 					}
 				}
 				catch (System.FormatException)
 				{
-					Console.WriteLine("输入类型不符, 已跳出");
+					Console.WriteLine("输入类型不符");
 					continue;
 				}
 				catch (OverflowException)
 				{
-					Console.WriteLine("序号过大, 已跳出");
+					Console.WriteLine("序号不符");
 					continue;
 				}
 				finally { }

@@ -43,7 +43,8 @@ namespace Test_Project_Script.Scripts
 			TeamB b = new TeamB();
 			SendSignal += a.Attack;
 			SendSignal += b.Attack;
-			Sendmsg("gyk");
+			Console.Write("Code: ");
+			Console.ReadLine();
 		}
 
 		public void Sendmsg(string code)
