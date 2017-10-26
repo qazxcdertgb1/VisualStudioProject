@@ -44,7 +44,7 @@ namespace Test_Project_Script.Scripts
 			SendSignal += a.Attack;
 			SendSignal += b.Attack;
 			Console.Write("Code: ");
-			Console.ReadLine();
+			Sendmsg(Console.ReadLine());
 		}
 
 		public void Sendmsg(string code)
