@@ -148,7 +148,7 @@ namespace ScriptTest
 							throw new OverflowException();
 					}
 				}
-				catch (System.FormatException)
+				catch (FormatException)
 				{
 					Console.WriteLine("输入类型不符");
 					continue;
